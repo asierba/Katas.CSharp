@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{0294E766-80D0-480C-B8A7-C5E71B613FB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{6D966833-75CC-44EC-B602-50A319722C24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout", "Checkout\Checkout.csproj", "{5B856D98-9B9E-4089-ABCC-0236BC55C9DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0294E766-80D0-480C-B8A7-C5E71B613FB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0294E766-80D0-480C-B8A7-C5E71B613FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0294E766-80D0-480C-B8A7-C5E71B613FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0294E766-80D0-480C-B8A7-C5E71B613FB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D966833-75CC-44EC-B602-50A319722C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D966833-75CC-44EC-B602-50A319722C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D966833-75CC-44EC-B602-50A319722C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D966833-75CC-44EC-B602-50A319722C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B856D98-9B9E-4089-ABCC-0236BC55C9DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B856D98-9B9E-4089-ABCC-0236BC55C9DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B856D98-9B9E-4089-ABCC-0236BC55C9DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B856D98-9B9E-4089-ABCC-0236BC55C9DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
