@@ -13,23 +13,25 @@ Fizzbuzz
 ---------
 
 Fizzbuzz is a drinking game where players take turns to count incrementally, replacing any number divisible by three with the word "fizz", and any number divisible by five with the word "buzz".
+
 E.g: 
-	1 -> 1
-    2 -> 2
-	3 -> fizz
-	4 -> 4
-	5-> buzz 
-	6 -> fizz
-	7 -> 7
-	8 -> 8
-	9 -> fizz
-	10 -> buzz
-	11 -> 11
-	12 -> fizz
-	13 -> 13
-	14 -> 14
-	15 -> fizzbuzz
-	...
+
+* 1 -> 1
+* 2 -> 2
+* 3 -> fizz
+* 4 -> 4
+* 5-> buzz 
+* 6 -> fizz
+* 7 -> 7
+* 8 -> 8
+* 9 -> fizz
+* 10 -> buzz
+* 11 -> 11
+* 12 -> fizz
+* 13 -> 13
+* 14 -> 14
+* 15 -> fizzbuzz
+* ...
 
 +info: http://en.wikipedia.org/wiki/Bizz_buzz
 
@@ -48,8 +50,7 @@ Checkout
 Supermarket checkout that calculates the total price of a number of items. 
 In a normal supermarket, things are identified using Stock Keeping Units, or SKUs. In our store, we’ll use individual letters of the alphabet (A, B, C, and so on). Our goods are priced individually. In addition, some items are multipriced: buy n of them, and they’ll cost you y cents. For example, item ‘A’ might cost 50 cents individually, but this week we have a special offer: buy three ‘A’s and they’ll cost you $1.30. In fact this week’s prices are:
 
-  Item   Unit      Special
-         Price     Price
+  Item	Unit  Price	 Special Price            
   --------------------------
     A     50       3 for 130
     B     30       2 for 45
