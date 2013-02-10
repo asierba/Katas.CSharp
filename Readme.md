@@ -6,6 +6,7 @@ This is a collection of Code Katas. Done in C# through a TDD approach.
 * FizzBuzz
 * Fibonacci
 * Checkout
+* String Calculator
 
 
 Fizzbuzz
@@ -57,3 +58,9 @@ In a normal supermarket, things are identified using Stock Keeping Units, or SKU
 Our checkout accepts items in any order, so that if we scan a B, an A, and another B, we’ll recognize the two B’s and price them at 45 (for a total price so far of 95). Because the pricing changes frequently, we need to be able to pass in a set of pricing rules each time we start handling a checkout transaction.
 
 Kata obtained from http://codekata.pragprog.com/2007/01/kata_nine_back_.html
+
+String Calculator
+------------------
+Calculates the sum of integers in a string separated by a comma.
+
+Kata obtained from http://osherove.com/tdd-kata-1/
