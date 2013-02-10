@@ -4,6 +4,7 @@ Code Katas in C#
 This is a collection of Code Katas. Done in C# through a TDD approach.
 
 * FizzBuzz
+* Fibonacci
 
 
 Fizzbuzz
@@ -32,3 +33,10 @@ E.g:
 
 Kata obtained from http://codingkata.net/Katas/Beginner/FizzBuzz
 
+
+Fibonacci
+-----------
+Fibonnaci is a sequence of numbers where the first number is 0, the second 1 and the subsquent the sum of the previous two.
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 114 ..
+
++info: http://en.wikipedia.org/wiki/Fibonacci_number
