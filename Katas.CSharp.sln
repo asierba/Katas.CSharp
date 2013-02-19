@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout", "Checkout\Checko
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculator", "StringCalculator\StringCalculator.csproj", "{53507BC0-9240-46D5-ACAC-926F0B55C0D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarateChop", "KarateChop\KarateChop.csproj", "{DB8EA4AE-EA9D-4FD8-80D5-14BBC0D2BA96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{53507BC0-9240-46D5-ACAC-926F0B55C0D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53507BC0-9240-46D5-ACAC-926F0B55C0D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53507BC0-9240-46D5-ACAC-926F0B55C0D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB8EA4AE-EA9D-4FD8-80D5-14BBC0D2BA96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB8EA4AE-EA9D-4FD8-80D5-14BBC0D2BA96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB8EA4AE-EA9D-4FD8-80D5-14BBC0D2BA96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB8EA4AE-EA9D-4FD8-80D5-14BBC0D2BA96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
