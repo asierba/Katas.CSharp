@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculator", "StringC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarateChop", "KarateChop\KarateChop.csproj", "{DB8EA4AE-EA9D-4FD8-80D5-14BBC0D2BA96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingGame", "BowlingGame\BowlingGame.csproj", "{F8A33EED-36A7-4143-8E17-D9F1D58EA6A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{DB8EA4AE-EA9D-4FD8-80D5-14BBC0D2BA96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB8EA4AE-EA9D-4FD8-80D5-14BBC0D2BA96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB8EA4AE-EA9D-4FD8-80D5-14BBC0D2BA96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8A33EED-36A7-4143-8E17-D9F1D58EA6A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8A33EED-36A7-4143-8E17-D9F1D58EA6A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8A33EED-36A7-4143-8E17-D9F1D58EA6A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8A33EED-36A7-4143-8E17-D9F1D58EA6A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
