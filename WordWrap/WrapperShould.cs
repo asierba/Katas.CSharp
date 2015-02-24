@@ -28,14 +28,26 @@ namespace WordWrap
             Assert.AreEqual("very\nlong\ntext", Wrapper.Wrap("verylongtext", 4));
             Assert.AreEqual("very\nvery\nlong\ntext", Wrapper.Wrap("veryverylongtext", 4));
         }
+
+        [Test]
+        public void Wrap_WhenSpaces()
+        {
+            Assert.AreEqual("two\nwords", Wrapper.Wrap("two words", 4));
+        }
     }
 
     public class Wrapper
     {
         public static string Wrap(string text, int columns)
         {
-            if(text.Length > columns) 
+            if (text.Length > columns)
+            {
+                if (text[columns - 1] == ' ')
+                    return text.Substring(0, columns - 1) + '\n' + text.Substring(columns);
+
                 return text.Substring(0, columns) + '\n' + Wrap(text.Substring(columns), columns);
+            }
+                
             return text;
         }
     }
