@@ -41,17 +41,22 @@ namespace WordWrap
             if (text.Length > columns)
             {
                 if (text[columns] == ' ')
-                    return text.Substring(0, columns) + '\n' + Wrap(text.Substring(columns + 1), columns);
+                    return Split(text, columns, 1);
                 if (text.Substring(0, columns).LastIndexOf(' ') != -1)
                 {
                     columns = text.Substring(0, columns).LastIndexOf(' ');
-                    return text.Substring(0, columns) + '\n' + Wrap(text.Substring(columns + 1), columns);
+                    return Split(text, columns, 1);
                 }
 
-                return text.Substring(0, columns) + '\n' + Wrap(text.Substring(columns), columns);
+                return Split(text, columns);
             }
                 
             return text;
+        }
+
+        private static string Split(string text, int columns, int offset = 0)
+        {
+            return text.Substring(0, columns) + '\n' + Wrap(text.Substring(columns + offset), columns);
         }
     }
 }
