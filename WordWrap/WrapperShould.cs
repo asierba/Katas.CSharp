@@ -28,6 +28,7 @@ namespace WordWrap
         public void SplitSentenceFromSpaces()
         {
             Assert.AreEqual("two\nwords", Wrapper.Wrap("two words", 3));
+            Assert.AreEqual("words\nwords", Wrapper.Wrap("words words", 7));
         }
     }
 
@@ -39,6 +40,11 @@ namespace WordWrap
             {
                 if (text[columns] == ' ')
                     return text.Substring(0, columns) + '\n' + text.Substring(columns + 1);
+                else if (text.Substring(0, columns).LastIndexOf(' ') != -1)
+                {
+                    columns = text.Substring(0, columns).LastIndexOf(' ');
+                    return text.Substring(0, columns) + '\n' + text.Substring(columns + 1);
+                }
 
                 return text.Substring(0, columns) + '\n' + Wrap(text.Substring(columns), columns);
             }
