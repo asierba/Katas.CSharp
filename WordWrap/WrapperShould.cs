@@ -2,16 +2,16 @@
 
 namespace WordWrap
 {
-    public class WrapperTests
+    public class WrapperShould
     {
         [Test]
-        public void EmtpyString()
+        public void NotWrap_EmtpyString()
         {
             Assert.AreEqual("", Wrapper.Wrap("", 0));
         }
 
         [Test]
-        public void ColumnsBiggerThanText()
+        public void NotWrap_WhenColumnsBiggerThanText()
         {
             Assert.AreEqual("this is a test", Wrapper.Wrap("this is a test", 20));
         }
