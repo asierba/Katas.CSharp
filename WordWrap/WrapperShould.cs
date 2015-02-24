@@ -15,12 +15,20 @@ namespace WordWrap
         {
             Assert.AreEqual("this is a test", Wrapper.Wrap("this is a test", 20));
         }
+
+        [Test]
+        public void Wrap_WhenColumnsSmallerThanText()
+        {
+            Assert.AreEqual("very\nlong", Wrapper.Wrap("verylong", 4));
+        }
     }
 
     public class Wrapper
     {
         public static string Wrap(string text, int columns)
         {
+            if(text.Length > columns) 
+                return text.Substring(0, columns) + '\n' + text.Substring(columns);
             return text;
         }
     }
