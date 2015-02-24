@@ -48,25 +48,27 @@ namespace WordWrap
             if (text.Length > columns)
             {
                 if (text[columns] == ' ')
-                    return Split(text, columns, 1); 
+                    return Split(text, columns, columns, 1); 
                 var previousSpace = text.Substring(0, columns).LastIndexOf(' ');
                 if (previousSpace != -1)
                 {
-                    var newcolumns = previousSpace;
-                    return Split(text, columns, 1, newcolumns);
+                    return Split(text, columns, previousSpace, 1);
                 }
-                    
+
                 return Split(text, columns);
             }
                 
             return text;
         }
 
-        private static string Split(string text, int columns, int offset = 0, int? newcolumns = null)
+        private static string Split(string text, int position)
         {
-            if(newcolumns.HasValue)
-                return text.Substring(0, newcolumns.Value) + '\n' + Wrap(text.Substring(newcolumns.Value + offset), columns);
-            return text.Substring(0, columns) + '\n' + Wrap(text.Substring(columns + offset), columns);
+            return Split(text, position, position);
+        }
+
+        private static string Split(string text, int position, int newPosition, int offset = 0)
+        {
+            return text.Substring(0, newPosition) + '\n' + Wrap(text.Substring(newPosition + offset), position);
         }
     }
 }
