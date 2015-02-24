@@ -31,6 +31,13 @@ namespace WordWrap
             Assert.AreEqual("words\nwords", Wrapper.Wrap("words words", 7));
             Assert.AreEqual("words\nwords\nwords", Wrapper.Wrap("words words words", 7));
             Assert.AreEqual("two\ntwo\ntwo", Wrapper.Wrap("two two two", 3));
+            
+        }
+
+        [Test]
+        public void SpaceAtTheBeginning()
+        {
+            Assert.AreEqual(" two\ntwo\ntwo", Wrapper.Wrap(" two two two", 4));
         }
     }
 
@@ -44,15 +51,21 @@ namespace WordWrap
                     return Split(text, columns, 1); 
                 var previousSpace = text.Substring(0, columns).LastIndexOf(' ');
                 if (previousSpace != -1)
-                    return Split(text, previousSpace, 1);
+                {
+                    var newcolumns = previousSpace;
+                    return Split(text, columns, 1, newcolumns);
+                }
+                    
                 return Split(text, columns);
             }
                 
             return text;
         }
 
-        private static string Split(string text, int columns, int offset = 0)
+        private static string Split(string text, int columns, int offset = 0, int? newcolumns = null)
         {
+            if(newcolumns.HasValue)
+                return text.Substring(0, newcolumns.Value) + '\n' + Wrap(text.Substring(newcolumns.Value + offset), columns);
             return text.Substring(0, columns) + '\n' + Wrap(text.Substring(columns + offset), columns);
         }
     }
