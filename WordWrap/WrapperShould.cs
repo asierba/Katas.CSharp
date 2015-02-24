@@ -41,13 +41,10 @@ namespace WordWrap
             if (text.Length > columns)
             {
                 if (text[columns] == ' ')
-                    return Split(text, columns, 1);
-                if (text.Substring(0, columns).LastIndexOf(' ') != -1)
-                {
-                    columns = text.Substring(0, columns).LastIndexOf(' ');
-                    return Split(text, columns, 1);
-                }
-
+                    return Split(text, columns, 1); 
+                var previousSpace = text.Substring(0, columns).LastIndexOf(' ');
+                if (previousSpace != -1)
+                    return Split(text, previousSpace, 1);
                 return Split(text, columns);
             }
                 
