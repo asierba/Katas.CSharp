@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wrapper.cs" />
     <Compile Include="WrapperShould.cs" />
   </ItemGroup>
   <ItemGroup>
