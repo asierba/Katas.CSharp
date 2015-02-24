@@ -5,32 +5,27 @@ namespace WordWrap
     public class WrapperShould
     {
         [Test]
-        public void NotWrap_EmtpyString()
+        public void NotSplit_EmtpyString()
         {
             Assert.AreEqual("", Wrapper.Wrap("", 0));
         }
 
         [Test]
-        public void NotWrap_WhenColumnsBiggerThanText()
+        public void NotSplit_WhenColumnsBiggerThanText()
         {
             Assert.AreEqual("this is a test", Wrapper.Wrap("this is a test", 20));
         }
 
         [Test]
-        public void Wrap_WhenColumnsSmallerThanText()
+        public void SplitSingleWord_WhenColumnsSmallerThanText()
         {
             Assert.AreEqual("very\nlong", Wrapper.Wrap("verylong", 4));
-        }
-
-        [Test]
-        public void WrapMultipleWords()
-        {
             Assert.AreEqual("very\nlong\ntext", Wrapper.Wrap("verylongtext", 4));
             Assert.AreEqual("very\nvery\nlong\ntext", Wrapper.Wrap("veryverylongtext", 4));
         }
 
         [Test]
-        public void Wrap_WhenSpaces()
+        public void SplitSentenceFromSpaces()
         {
             Assert.AreEqual("two\nwords", Wrapper.Wrap("two words", 4));
         }
